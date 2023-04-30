@@ -1,0 +1,91 @@
+@import url("https://fonts.cdnfonts.com/css/clash-display?styles=106288,106287,106289,106284");
+@import url("https://fonts.cdnfonts.com/css/satoshi?styles=135009,135007,135002");
+body {
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+body header .nav {
+  display: flex;
+  padding: 26px 25px;
+  align-items: center;
+}
+body header .nav .logo {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: "Clash Display", sans-serif;
+  color: #22202e;
+  text-decoration: none;
+}
+body header .nav .nav-icons {
+  display: flex;
+  margin-left: auto;
+  padding-right: 1rem;
+  gap: 1.4rem;
+  color: #2a254b;
+}
+body header .hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a254b;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+body header .hero-section h2 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 2rem;
+  line-height: 140%;
+  font-weight: 400;
+}
+body header .hero-section h3 {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+body header .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(249, 249, 249, 0.15);
+  width: 70%;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 1rem;
+  border: none;
+  margin: 6%;
+}
+body main .feature-section {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #2a254b;
+}
+body main .feature-section h4 {
+  font-family: "Clash Display", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+body main .feature-section .feature-block {
+  margin-top: 2.25rem;
+  font-weight: 400;
+}
+body main .feature-section .feature-block div a i {
+  font-size: 1.5rem;
+}
+body main .feature-section .feature-block div p:nth-child(2) {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+body main .feature-section .feature-block div p {
+  font-family: "Satoshi", sans-serif;
+  font-size: 0.87rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
