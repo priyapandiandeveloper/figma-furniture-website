@@ -19,6 +19,7 @@
 body {
   font-family: "Satoshi", sans-serif;
   margin: 0;
+  line-height: 140%;
 }
 body header .nav {
   display: flex;
@@ -52,12 +53,10 @@ body header .hero-section {
 body header .hero-section h2 {
   font-family: "Clash Display", sans-serif;
   font-size: 2rem;
-  line-height: 140%;
   font-weight: 400;
 }
 body header .hero-section h3 {
   font-size: 1.2rem;
-  line-height: 150%;
   font-weight: 400;
 }
 body main .feature-section {
@@ -123,7 +122,6 @@ body main .listings-section1 .list-container .row .product-card .product-details
   font-family: "Clash Display", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 140%;
   margin: 1rem 0;
 }
 body main .listings-section1 .list-container .row .product-card .product-details a {
@@ -142,4 +140,56 @@ body main .listings-section1 .list-container .btn {
   color: #2a254b;
   width: 80%;
   padding-top: 1rem;
+}
+body main .signup-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+body main .signup-section .text-content {
+  justify-content: center;
+  color: #2a254b;
+}
+body main .signup-section .text-content h4 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+body main .signup-section .text-content p {
+  font-family: "Satoshi", sans-serif;
+  font-size: 0.8rem;
+}
+body main .signup-section .email-section form {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .signup-section .email-section form .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body main .signup-section .email-section form .input-wrapper input {
+  text-align: start;
+  font-family: "Satoshi", sans-serif;
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  background-color: #f9f9f9;
+  border: none;
+}
+body main .signup-section .email-section form .input-wrapper .email-btn {
+  position: absolute;
+  right: 0;
+  width: 33%;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #2a254b;
+  padding: 1rem 1rem;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

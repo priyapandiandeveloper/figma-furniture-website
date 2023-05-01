@@ -6,6 +6,7 @@
 body {
   font-family: $font-satoshi;
   margin: 0;
+  line-height: 140%;
 
   header {
     .nav {
@@ -42,32 +43,17 @@ body {
         font-family: $font-clash;
         // padding: 0px 24px;
         font-size: 2rem;
-        line-height: 140%;
+        // line-height: 140%;
         font-weight: 400;
       }
       h3 {
         // font-family: $font-satoshi;
         // padding: 0 24px;
         font-size: 1.2rem;
-        line-height: 150%;
+        // line-height: 150%;
         font-weight: 400;
       }
     }
-    // .btn {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   background: rgba(249, 249, 249, 0.15);
-    //   width: 70%;
-    //   font-family: $font-satoshi;
-    //   font-size: 1rem;
-    //   font-weight: 400;
-    //   line-height: 150%;
-    //   color: $white;
-    //   padding: 1rem;
-    //   border: none;
-    //   margin: 6%;
-    // }
   }
   main {
     .feature-section {
@@ -108,10 +94,6 @@ body {
       }
     }
     .listings-section1 {
-      //   background-color: aqua;
-      //   display: flex;
-      //   //   justify-content: center;
-      //   //   align-items: center;
       .list-container {
         display: flex;
         flex-direction: column;
@@ -143,7 +125,7 @@ body {
                 font-family: $font-clash;
                 font-weight: 400;
                 font-size: 1.25rem;
-                line-height: 140%;
+                // line-height: 140%;
                 margin: 1rem 0;
               }
               a {
@@ -167,6 +149,64 @@ body {
           color: $dark-purple;
           width: 80%;
           padding-top: 1rem;
+        }
+      }
+    }
+    .signup-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 0;
+
+      .text-content {
+        justify-content: center;
+        color: $dark-purple;
+
+        h4 {
+          font-family: $font-clash;
+          font-size: 1.25rem;
+          font-weight: 400;
+        }
+        p {
+          font-family: $font-satoshi;
+          font-size: 0.8rem;
+        }
+      }
+      .email-section {
+        form {
+          padding-top: 4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .input-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            input {
+              text-align: start;
+              font-family: $font-satoshi;
+              width: 100%;
+              font-size: 1rem;
+              padding: 1rem 3rem;
+              background-color: $light-grey;
+              border: none;
+            }
+            .email-btn {
+              position: absolute;
+              right: 0;
+              width: 33%;
+              font-family: $font-satoshi;
+              font-size: 1rem;
+              color: $white;
+              background-color: $dark-purple;
+              padding: 1rem 1rem;
+              border: none;
+            }
+          }
         }
       }
     }
