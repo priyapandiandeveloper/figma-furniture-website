@@ -1,5 +1,21 @@
 @import url("https://fonts.cdnfonts.com/css/clash-display?styles=106288,106287,106289,106284");
 @import url("https://fonts.cdnfonts.com/css/satoshi?styles=135009,135007,135002");
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(249, 249, 249, 0.15);
+  width: 70%;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 1rem;
+  border: none;
+  margin: 6%;
+}
+
 body {
   font-family: "Satoshi", sans-serif;
   margin: 0;
@@ -44,25 +60,12 @@ body header .hero-section h3 {
   line-height: 150%;
   font-weight: 400;
 }
-body header .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(249, 249, 249, 0.15);
-  width: 70%;
-  font-family: "Satoshi", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 150%;
-  color: #ffffff;
-  padding: 1rem;
-  border: none;
-  margin: 6%;
-}
 body main .feature-section {
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: #2a254b;
 }
 body main .feature-section h4 {
@@ -88,4 +91,55 @@ body main .feature-section .feature-block div p {
   font-size: 0.87rem;
   line-height: 1.3rem;
   font-weight: 400;
+}
+body main .listings-section1 .list-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+body main .listings-section1 .list-container h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+body main .listings-section1 .list-container .row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+body main .listings-section1 .list-container .row .product-card {
+  padding: 0.7rem;
+}
+body main .listings-section1 .list-container .row .product-card .product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #2a254b;
+}
+body main .listings-section1 .list-container .row .product-card .product-details h4 {
+  font-family: "Clash Display", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 140%;
+  margin: 1rem 0;
+}
+body main .listings-section1 .list-container .row .product-card .product-details a {
+  font-family: "Satoshi", sans-serif;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 150%;
+}
+body main .listings-section1 .list-container .row .product-card img {
+  width: 100%;
+  height: 200px;
+}
+body main .listings-section1 .list-container .btn {
+  background-color: #f9f9f9;
+  color: #2a254b;
+  width: 80%;
+  padding-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
