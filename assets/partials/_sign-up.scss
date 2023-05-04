@@ -1,0 +1,66 @@
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+
+  label {
+    position: relative;
+
+    input[type="email"] {
+      border: none;
+      width: 200px;
+      height: 50px;
+      padding: 0 4rem;
+    }
+    #email::placeholder {
+      color: $white;
+      font-family: $font-satoshi;
+      font-size: 1rem;
+    }
+    .signup-btn {
+      position: absolute;
+      top: 0;
+      right: -3rem;
+      transform: translate(-50%);
+      padding: 14px;
+      font-family: $font-satoshi;
+      color: $dark-purple;
+      letter-spacing: 2px;
+      font-size: 1rem;
+      border: none;
+    }
+  }
+  &.sign-up-primary {
+    label {
+      input[type="email"] {
+        background-color: $light-grey;
+        color: $dark-purple;
+      }
+      #email::placeholder {
+        color: $dark-purple;
+      }
+
+      .signup-btn {
+        background-color: $dark-purple;
+        color: $white;
+      }
+    }
+  }
+  &.sign-up-secondary {
+    label {
+      input[type="email"] {
+        background: rgba(255, 255, 255, 0.15);
+      }
+      #email::placeholder {
+        color: $white;
+      }
+
+      .signup-btn {
+        background-color: $white;
+        color: $dark-purple;
+      }
+    }
+  }
+}

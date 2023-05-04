@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(249, 249, 249, 0.15);
-  width: 70%;
+  background-color: rgba(249, 249, 249, 0.15);
+  width: 80%;
   font-family: "Satoshi", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -14,6 +14,85 @@
   padding: 1rem;
   border: none;
   margin: 6%;
+}
+.btn.btn-primary {
+  color: #ffffff;
+}
+.btn.btn-secondary {
+  background-color: #f9f9f9;
+  color: #2a254b;
+  align-self: center;
+}
+.btn.btn-tertiary {
+  color: #2a254b;
+  background-color: #f9f9f9;
+  align-self: center;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.sign-up-container label {
+  position: relative;
+}
+.sign-up-container label input[type=email] {
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 0 4rem;
+}
+.sign-up-container label #email::-moz-placeholder {
+  color: #ffffff;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+}
+.sign-up-container label #email::placeholder {
+  color: #ffffff;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+}
+.sign-up-container label .signup-btn {
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  transform: translate(-50%);
+  padding: 14px;
+  font-family: "Satoshi", sans-serif;
+  color: #2a254b;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  border: none;
+}
+.sign-up-container.sign-up-primary label input[type=email] {
+  background-color: #f9f9f9;
+  color: #2a254b;
+}
+.sign-up-container.sign-up-primary label #email::-moz-placeholder {
+  color: #2a254b;
+}
+.sign-up-container.sign-up-primary label #email::placeholder {
+  color: #2a254b;
+}
+.sign-up-container.sign-up-primary label .signup-btn {
+  background-color: #2a254b;
+  color: #ffffff;
+}
+.sign-up-container.sign-up-secondary label input[type=email] {
+  background: rgba(255, 255, 255, 0.15);
+}
+.sign-up-container.sign-up-secondary label #email::-moz-placeholder {
+  color: #ffffff;
+}
+.sign-up-container.sign-up-secondary label #email::placeholder {
+  color: #ffffff;
+}
+.sign-up-container.sign-up-secondary label .signup-btn {
+  background-color: #ffffff;
+  color: #2a254b;
 }
 
 body {
@@ -53,10 +132,12 @@ body header .hero-section {
 body header .hero-section h2 {
   font-family: "Clash Display", sans-serif;
   font-size: 2rem;
+  line-height: 140%;
   font-weight: 400;
 }
 body header .hero-section h3 {
   font-size: 1.2rem;
+  line-height: 150%;
   font-weight: 400;
 }
 body main .feature-section {
@@ -135,12 +216,6 @@ body main .listings-section1 .list-container .row .product-card img {
   width: 100%;
   height: 200px;
 }
-body main .listings-section1 .list-container .btn {
-  background-color: #f9f9f9;
-  color: #2a254b;
-  width: 80%;
-  padding-top: 1rem;
-}
 body main .signup-section {
   display: flex;
   flex-direction: column;
@@ -192,4 +267,72 @@ body main .signup-section .email-section form .input-wrapper .email-btn {
   background-color: #2a254b;
   padding: 1rem 1rem;
   border: none;
+}
+body main .get-in-touch-section {
+  display: flex;
+  flex-direction: column;
+}
+body main .get-in-touch-section h4 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.25rem;
+  color: #2a254b;
+  font-weight: 400;
+  padding: 0.7rem 1.25rem;
+}
+body main .get-in-touch-section p {
+  padding: 0rem 1.25rem;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+body footer {
+  background-color: #2a254b;
+}
+body footer .footer-list {
+  display: inline-flex;
+  padding: 20px;
+}
+body footer .footer-list ul li:first-child a {
+  font-size: 1rem;
+  font-family: "Clash Display", sans-serif;
+}
+body footer .footer-list ul li {
+  list-style-type: none;
+  padding: 0.4rem;
+}
+body footer .footer-list ul li a {
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-size: 0.8rem;
+  font-family: "Satoshi", sans-serif;
+  text-transform: capitalize;
+}
+body footer .join-us-section {
+  color: rgb(214, 214, 214);
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+body footer .join-us-section h5 {
+  font-size: 1rem;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+body footer .join-us-section .sign-up-container1 label {
+  background-color: aquamarine;
+}
+body footer .solid-line {
+  border-top: 1px solid #4e4d93;
+  width: 342px;
+}
+body footer h6 {
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 1rem 0 1rem 0;
 }/*# sourceMappingURL=style.css.map */

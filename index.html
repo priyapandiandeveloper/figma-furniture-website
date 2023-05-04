@@ -34,7 +34,7 @@
           colors and a <br />beautiful way to display things digitally<br />
           using modern web technologies.
         </h3>
-        <button type="submit" class="btn">view collection</button>
+        <button type="submit" class="btn btn-primary">view collection</button>
       </div>
     </header>
     <main>
@@ -128,7 +128,9 @@
               </div>
             </div>
           </div>
-          <button type="submit" class="btn">view collection</button>
+          <button type="submit" class="btn btn-secondary">
+            view collection
+          </button>
         </div>
       </section>
       <section class="signup-section">
@@ -139,21 +141,74 @@
             on new ranges, sales, pop up stores and more
           </p>
         </div>
-        <div class="email-section">
-          <form action="signup" method="post">
-            <div class="input-wrapper">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="your@gmail.com"
-                required
-              />
-              <button type="submit" class="email-btn">Sign up</button>
-            </div>
-          </form>
+
+        <div class="sign-up-container sign-up-primary">
+          <label for="email" class="sign-up-label">
+            <input type="email" id="email" placeholder="your@email.com" />
+            <button class="signup-btn">Sign up</button>
+          </label>
         </div>
       </section>
+      <section class="get-in-touch-section">
+        <h4>
+          From a studio in London to <br />
+          a global brand with <br />
+          over 400 outlets
+        </h4>
+        <p>
+          When we started Avion, the idea was simple. Make high quality
+          furniture affordable and available for the mass market. <br />
+          <br />
+          Handmade, and lovingly crafted furniture and homeware is what we live,
+          breathe and design so our Chelsea boutique become the hotbed for the
+          London interior design community.
+        </p>
+        <button type="submit" class="btn btn-tertiary">Get In Touch</button>
+        <img src="assets/images/feature-img.png" alt="" />
+      </section>
     </main>
+    <footer>
+      <div class="footer-list">
+        <ul class="footer-row1">
+          <li class="list-title"><a href="#">categories</a></li>
+          <li><a href="#">crockery</a></li>
+          <li><a href="#">furniture</a></li>
+          <li><a href="#">homeware</a></li>
+          <li><a href="#">plant pots</a></li>
+          <li><a href="#">chairs</a></li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <ul class="footer-row1">
+          <li class="list-title"><a href="#">menu</a></li>
+          <li><a href="#">new arrivals</a></li>
+          <li><a href="#">best sellers</a></li>
+          <li><a href="#">recently viewed</a></li>
+          <li><a href="#">popular this week</a></li>
+          <li><a href="#">all products</a></li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <ul class="footer-row2">
+          <li class="list-title"><a href="#">our company</a></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">vacancies</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">privacy</a></li>
+          <li><a href="#">returns policy</a></li>
+        </ul>
+      </div>
+      <div class="join-us-section">
+        <h5>Join our mailing list</h5>
+        <div class="sign-up-container sign-up-secondary">
+          <label for="email">
+            <input type="email" id="email" placeholder="your@email.com" />
+            <button class="signup-btn">Sign up</button>
+          </label>
+        </div>
+      </div>
+      <hr class="solid-line" />
+      <h6>Copyright 2022 Avion LTD</h6>
+    </footer>
   </body>
 </html>
