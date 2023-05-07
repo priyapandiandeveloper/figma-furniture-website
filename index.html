@@ -15,34 +15,57 @@
     <header>
       <nav class="nav">
         <a href="#" class="logo">Avion</a>
-        <!-- <a href="#"><i class="fa-duotone fa-cart-shopping-fast"></i></a> -->
-        <!-- <a href=""><i class="fa-regular fa-user"></i></a> -->
-        <div class="nav-icons">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href=""><i class="fa-solid fa-bars"></i></a>
+        <div class="nav-icons desktop-only">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
         </div>
+        <div class="nav-icons mobile-only">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <!-- <div class="nav-links">
+          <ul>
+            <li><a href="#">Plant Pots</a></li>
+            <li><a href="#">Ceramics</a></li>
+            <li><a href="#">Tables</a></li>
+            <li><a href="#">Chairs</a></li>
+            <li><a href="#">Crockery</a></li>
+            <li><a href="#">Tableware</a></li>
+            <li><a href="#">Cutlery</a></li>
+          </ul>
+        </div> -->
       </nav>
       <div class="hero-section">
-        <h2>
-          The furniture brand <br />
-          for the future, with <br />
-          timeless designs
-        </h2>
-        <h3>
-          A new era in eco friendly furniture with <br />
-          Avelon, the French luxury retail brand <br />with nice fonts, tasteful
-          colors and a <br />beautiful way to display things digitally<br />
-          using modern web technologies.
-        </h3>
-        <button type="submit" class="btn btn-primary">view collection</button>
+        <div class="hero-text hero-text-desktop">
+          <h2 class="top-hero-content">
+            The furniture brand for the <br />
+            future, with timeless designs
+          </h2>
+
+          <h3>
+            A new era in eco friendly furniture with Avelon, the French luxury
+            retail brand <br />with nice fonts, tasteful colors and a beautiful
+            way to display things digitally<br />
+            using modern web technologies.
+          </h3>
+          <button type="submit" class="btn btn-primary top-hero-content">
+            view collection
+          </button>
+        </div>
+        <div class="hero-img">
+          <img src="assets/images/hero-img.png" alt="blue chair is placed" />
+        </div>
       </div>
     </header>
     <main>
       <section class="feature-section">
-        <h4>
-          What makes our brand <br />
-          different
-        </h4>
+        <div class="feature-title">
+          <h4>
+            What makes our brand <br />
+            different
+          </h4>
+        </div>
+
         <div class="feature-block">
           <div>
             <a href="#"><i class="fa-solid fa-truck"></i></a>
@@ -132,6 +155,43 @@
             view collection
           </button>
         </div>
+      </section>
+      <section class="listings-section2">
+        <h3>Our popular products</h3>
+        <div class="list-container">
+          <div class="product-card">
+            <img
+              src="assets/images/img1.png"
+              alt="earthy textured flower vases"
+            />
+            <div class="product-details">
+              <h4>The Poplar suede sofa</h4>
+              <a>£455</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="assets/images/img2.png"
+              alt="earthy textured flower vases"
+            />
+            <div class="product-details">
+              <h4>The Dandy chair</h4>
+              <a>£399</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="assets/images/img3.png"
+              alt="earthy textured flower vases"
+            />
+            <div class="product-details">
+              <h4>The Dandy chair</h4>
+              <a>£125</a>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-secondary">view collection</button>
       </section>
       <section class="signup-section">
         <div class="text-content">

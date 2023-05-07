@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(249, 249, 249, 0.15);
-  width: 80%;
   font-family: "Satoshi", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -14,9 +13,11 @@
   padding: 1rem;
   border: none;
   margin: 6%;
+  cursor: pointer;
 }
 .btn.btn-primary {
   color: #ffffff;
+  width: 90%;
 }
 .btn.btn-secondary {
   background-color: #f9f9f9;
@@ -104,6 +105,7 @@ body header .nav {
   display: flex;
   padding: 26px 25px;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 body header .nav .logo {
   font-weight: 400;
@@ -117,8 +119,21 @@ body header .nav .nav-icons {
   display: flex;
   margin-left: auto;
   padding-right: 1rem;
-  gap: 1.4rem;
+  gap: 1rem;
   color: #2a254b;
+}
+@media screen and (max-width: 570px) {
+  body header .nav .desktop-only {
+    display: none;
+  }
+  body header .nav .nav-links {
+    display: none;
+  }
+}
+@media screen and (min-width: 569px) {
+  body header .nav .mobile-only {
+    display: none;
+  }
 }
 body header .hero-section {
   display: flex;
@@ -129,33 +144,109 @@ body header .hero-section {
   color: #ffffff;
   padding: 1rem 2rem;
 }
-body header .hero-section h2 {
+@media screen and (min-width: 571px) {
+  body header .hero-section {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+body header .hero-section .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+@media screen and (min-width: 570px) {
+  body header .hero-section .hero-text {
+    padding: 3.75rem;
+  }
+}
+body header .hero-section .hero-text h2 {
   font-family: "Clash Display", sans-serif;
   font-size: 2rem;
   line-height: 140%;
   font-weight: 400;
 }
-body header .hero-section h3 {
+@media screen and (min-width: 570px) {
+  body header .hero-section .hero-text h2 {
+    order: 1;
+  }
+}
+body header .hero-section .hero-text h3 {
   font-size: 1.2rem;
   line-height: 150%;
   font-weight: 400;
+  padding-top: 4rem;
+}
+@media screen and (min-width: 570px) {
+  body header .hero-section .hero-text h3 {
+    order: 3;
+    padding-top: 8rem;
+  }
+}
+@media screen and (min-width: 570px) {
+  body header .hero-section .hero-text .btn-primary {
+    width: 30%;
+    order: 2;
+    margin: 2.5rem 0;
+  }
+}
+body header .hero-section .hero-img {
+  width: 40%;
+  flex-grow: 1;
+  background-color: aliceblue;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .hero-section .hero-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 570px) {
+  body header .hero-section .hero-img {
+    display: none;
+  }
+}
+@media screen and (min-width: 571px) {
+  body header .hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3.7rem 5rem;
+  }
 }
 body main .feature-section {
   padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   color: #2a254b;
+}
+@media screen and (min-width: 571px) {
+  body main .feature-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 body main .feature-section h4 {
   font-family: "Clash Display", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  margin: 2rem;
+}
+@media screen and (min-width: 571px) {
+  body main .feature-section h4 {
+    display: none;
+  }
 }
 body main .feature-section .feature-block {
-  margin-top: 2.25rem;
+  margin: 2.25rem 2rem;
   font-weight: 400;
 }
 body main .feature-section .feature-block div a i {
@@ -163,6 +254,7 @@ body main .feature-section .feature-block div a i {
 }
 body main .feature-section .feature-block div p:nth-child(2) {
   font-family: "Clash Display", sans-serif;
+  color: #2a254b;
   font-size: 1rem;
   line-height: 1.3rem;
 }
@@ -172,11 +264,21 @@ body main .feature-section .feature-block div p {
   line-height: 1.3rem;
   font-weight: 400;
 }
-body main .listings-section1 .list-container {
+body main .listings-section1 {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  align-items: center;
+}
+body main .listings-section1 .list-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 571px) {
+  body main .listings-section1 .list-container {
+    flex-direction: row;
+  }
 }
 body main .listings-section1 .list-container h3 {
   font-weight: 400;
@@ -215,6 +317,32 @@ body main .listings-section1 .list-container .row .product-card .product-details
 body main .listings-section1 .list-container .row .product-card img {
   width: 100%;
   height: 200px;
+}
+body main .listings-section2 {
+  padding: 1rem;
+}
+@media (max-width: 571px) {
+  body main .listings-section2 {
+    display: none;
+  }
+}
+body main .listings-section2 h3 {
+  font-weight: 400;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+body main .listings-section2 .list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+body main .listings-section2 .btn-secondary {
+  margin: 2.6rem auto 3rem auto;
+  width: 20%;
+  background-color: rgb(243, 243, 243);
 }
 body main .signup-section {
   display: flex;

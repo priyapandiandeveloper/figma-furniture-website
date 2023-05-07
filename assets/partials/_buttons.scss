@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(249, 249, 249, 0.15);
-  width: 80%;
+  // width: 80%;
   font-family: $font-satoshi;
   font-size: 1rem;
   font-weight: 400;
@@ -12,9 +12,11 @@
   padding: 1rem;
   border: none;
   margin: 6%;
+  cursor: pointer;
 
   &.btn-primary {
     color: $white;
+    width: 90%;
   }
 
   &.btn-secondary {
