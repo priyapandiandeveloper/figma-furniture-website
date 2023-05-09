@@ -67,6 +67,8 @@
   letter-spacing: 2px;
   font-size: 1rem;
   border: none;
+  align-self: center;
+  cursor: pointer;
 }
 .sign-up-container.sign-up-primary label input[type=email] {
   background-color: #f9f9f9;
@@ -268,31 +270,42 @@ body main .listings-section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+body main .listings-section1 h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 2rem;
+  font-family: "Clash Display", sans-serif;
 }
 body main .listings-section1 .list-container {
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 571px) {
   body main .listings-section1 .list-container {
     flex-direction: row;
   }
 }
-body main .listings-section1 .list-container h3 {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
 body main .listings-section1 .list-container .row {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 571px) {
+  body main .listings-section1 .list-container .row {
+    justify-content: space-between;
+  }
 }
 body main .listings-section1 .list-container .row .product-card {
   padding: 0.7rem;
+  flex-grow: 1;
 }
 body main .listings-section1 .list-container .row .product-card .product-details {
   display: flex;
@@ -317,11 +330,18 @@ body main .listings-section1 .list-container .row .product-card .product-details
 body main .listings-section1 .list-container .row .product-card img {
   width: 100%;
   height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 571px) {
+  body main .listings-section1 .list-container .row .product-card img {
+    height: 370px;
+  }
 }
 body main .listings-section2 {
   padding: 1rem;
 }
-@media (max-width: 571px) {
+@media screen and (max-width: 571px) {
   body main .listings-section2 {
     display: none;
   }
@@ -349,34 +369,60 @@ body main .signup-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 1rem 0.5rem;
+  background-color: #f9f9f9;
 }
-body main .signup-section .text-content {
-  justify-content: center;
+@media screen and (min-width: 571px) {
+  body main .signup-section {
+    padding: 2rem 0;
+  }
+}
+body main .signup-section .sign-up-container {
+  background-color: #ffffff;
+  padding: 0rem 1rem;
+}
+@media screen and (min-width: 571px) {
+  body main .signup-section .sign-up-container {
+    padding: 1rem 17rem;
+  }
+}
+body main .signup-section .sign-up-container .text-content {
+  text-align: center;
   color: #2a254b;
+  background-color: #ffffff;
 }
-body main .signup-section .text-content h4 {
+body main .signup-section .sign-up-container .text-content h4 {
   font-family: "Clash Display", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
 }
-body main .signup-section .text-content p {
+@media screen and (min-width: 571px) {
+  body main .signup-section .sign-up-container .text-content h4 {
+    font-size: 3rem;
+  }
+}
+body main .signup-section .sign-up-container .text-content p {
   font-family: "Satoshi", sans-serif;
   font-size: 0.8rem;
 }
-body main .signup-section .email-section form {
+@media screen and (min-width: 571px) {
+  body main .signup-section .sign-up-container .text-content p {
+    font-size: 1rem;
+  }
+}
+body main .signup-section .sign-up-container .email-section form {
   padding-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body main .signup-section .email-section form .input-wrapper {
+body main .signup-section .sign-up-container .email-section form .input-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-body main .signup-section .email-section form .input-wrapper input {
+body main .signup-section .sign-up-container .email-section form .input-wrapper input {
   text-align: start;
   font-family: "Satoshi", sans-serif;
   width: 100%;
@@ -385,7 +431,7 @@ body main .signup-section .email-section form .input-wrapper input {
   background-color: #f9f9f9;
   border: none;
 }
-body main .signup-section .email-section form .input-wrapper .email-btn {
+body main .signup-section .sign-up-container .email-section form .input-wrapper .email-btn {
   position: absolute;
   right: 0;
   width: 33%;
@@ -399,42 +445,93 @@ body main .signup-section .email-section form .input-wrapper .email-btn {
 body main .get-in-touch-section {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-body main .get-in-touch-section h4 {
+@media screen and (min-width: 571px) {
+  body main .get-in-touch-section {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 571px) {
+  body main .get-in-touch-section .get-in-touch-text {
+    width: 50%;
+    padding: 4.5rem 5.25rem;
+  }
+}
+body main .get-in-touch-section .get-in-touch-text h4 {
   font-family: "Clash Display", sans-serif;
   font-size: 1.25rem;
   color: #2a254b;
   font-weight: 400;
-  padding: 0.7rem 1.25rem;
+  padding: 1.5rem 1.2rem;
 }
-body main .get-in-touch-section p {
-  padding: 0rem 1.25rem;
+@media screen and (min-width: 571px) {
+  body main .get-in-touch-section .get-in-touch-text h4 {
+    font-size: 1.5rem;
+    line-height: 140%;
+  }
+}
+body main .get-in-touch-section .get-in-touch-text p {
+  padding: 0rem 1.2rem;
   font-size: 0.8rem;
   line-height: 150%;
+}
+@media screen and (min-width: 571px) {
+  body main .get-in-touch-section .get-in-touch-text p {
+    font-size: 1rem;
+  }
+}
+body main .get-in-touch-section .get-in-touch-text button {
+  margin-top: 4rem;
+  width: 90%;
+}
+@media screen and (min-width: 571px) {
+  body main .get-in-touch-section .get-in-touch-text button {
+    width: 30%;
+  }
+}
+body main .get-in-touch-section img {
+  width: 100%;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 571px) {
+  body main .get-in-touch-section img {
+    width: 50%;
+  }
 }
 body footer {
   background-color: #2a254b;
 }
-body footer .footer-list {
+@media screen and (min-width: 571px) {
+  body footer .footer-section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+body footer .footer-section1 .footer-list {
   display: inline-flex;
   padding: 20px;
 }
-body footer .footer-list ul li:first-child a {
+body footer .footer-section1 .footer-list ul li:first-child a {
   font-size: 1rem;
   font-family: "Clash Display", sans-serif;
 }
-body footer .footer-list ul li {
+body footer .footer-section1 .footer-list ul li {
   list-style-type: none;
   padding: 0.4rem;
 }
-body footer .footer-list ul li a {
+body footer .footer-section1 .footer-list ul li a {
   text-decoration: none;
   color: rgb(214, 214, 214);
   font-size: 0.8rem;
   font-family: "Satoshi", sans-serif;
   text-transform: capitalize;
 }
-body footer .join-us-section {
+body footer .footer-section1 .join-us-section {
   color: rgb(214, 214, 214);
   display: flex;
   flex-direction: column;
@@ -443,20 +540,34 @@ body footer .join-us-section {
   justify-content: center;
   padding: 1rem 2rem;
 }
-body footer .join-us-section h5 {
+@media screen and (min-width: 571px) {
+  body footer .footer-section1 .join-us-section {
+    width: 50%;
+  }
+}
+body footer .footer-section1 .join-us-section h5 {
   font-size: 1rem;
   font-family: "Clash Display", sans-serif;
   font-weight: 400;
   color: #ffffff;
 }
-body footer .join-us-section .sign-up-container1 label {
-  background-color: aquamarine;
+@media screen and (min-width: 571px) {
+  body footer .footer-section1 .join-us-section .sign-up-container label input[type=email] {
+    width: 300px;
+    height: 50px;
+    padding: 0 6rem;
+  }
 }
-body footer .solid-line {
+body footer .footer-section2 .solid-line {
   border-top: 1px solid #4e4d93;
-  width: 342px;
+  width: 70%;
 }
-body footer h6 {
+@media screen and (min-width: 571px) {
+  body footer .footer-section2 .solid-line {
+    width: 80%;
+  }
+}
+body footer .footer-section2 h6 {
   text-align: center;
   font-family: "Satoshi", sans-serif;
   color: #ffffff;
